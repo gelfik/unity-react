@@ -15,7 +15,7 @@ export function UnityContainer() {
 }
 
 return (<div>
-  <Unity unityProvider={unityProvider} style={{width: "200vw", height: "200vh", overflow: "hidden", zIndex: 0}} />
+  <Unity unityProvider={unityProvider} style={{width: "100vw", height: "100vh", overflow: "hidden", zIndex: 0}} />
   <button onClick={handleAttackButton}>Attack</button>
 </div>);
 }
