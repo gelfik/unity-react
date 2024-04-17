@@ -17,6 +17,6 @@ export function UnityContainer() {
 
 return (<div>
   <Unity unityProvider={unityProvider} style={{width: "100vw", height: "100vh", overflow: "hidden", zIndex: 0}} />
-  <HUD score={score} attackCallback={handleAttackButton}/>
+  <HUD attackCallback={handleAttackButton}/>
 </div>);
 }
