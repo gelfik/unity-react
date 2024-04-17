@@ -4,9 +4,9 @@ export function UnityContainer() {
   const {unityProvider, sendMessage, addEventListener, removeEventListener, isLoaded} =
   useUnityContext({
     loaderUrl: "./build/ArCraftForReact.loader.js",
-    dataUrl: "./build/ArCraftForReact.data.unityweb",
-    frameworkUrl: "./build/ArCraftForReact.framework.js.unityweb",
-    codeUrl: "./build/ArCraftForReact.wasm.unityweb",
+    dataUrl: "./build/ArCraftForReact.data",
+    frameworkUrl: "./build/ArCraftForReact.framework.js",
+    codeUrl: "./build/ArCraftForReact.wasm",
   });
 
   function handleAttackButton(){
