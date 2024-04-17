@@ -3,13 +3,13 @@
     left: 0;
     top: 0;
     width: 100vw;
-    height: 0vh;
+    height: 100vh;
     z-index: 1;
 }
 .hud-attack-button{
     position: absolute;
-    top: 500px;
-    right: 500px;
+    top: 20px;
+    right: 20px;
     width: 100px;
     height: 40px;
 }
