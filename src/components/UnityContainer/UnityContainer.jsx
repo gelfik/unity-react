@@ -1,5 +1,6 @@
 import React, {useCallback, useEffect, useState} from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
+import {HUD} from "../HUD/HUD";
 export function UnityContainer() {
   const {unityProvider, sendMessage, addEventListener, removeEventListener, isLoaded} =
   useUnityContext({
@@ -16,6 +17,6 @@ export function UnityContainer() {
 
 return (<div>
   <Unity unityProvider={unityProvider} style={{width: "100vw", height: "100vh", overflow: "hidden", zIndex: 0}} />
-  <button onClick={handleAttackButton}>Attack</button>
+  <HUD score={score} attackCallback={handleAttackButton}/>
 </div>);
 }

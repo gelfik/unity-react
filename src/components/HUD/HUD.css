@@ -1,0 +1,15 @@
+.hud{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 0vh;
+    z-index: 1;
+}
+.hud-attack-button{
+    position: absolute;
+    top: 500px;
+    right: 500px;
+    width: 100px;
+    height: 40px;
+}
