@@ -2,10 +2,16 @@ import React, {useCallback, useEffect, useState} from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 import {HUD} from "../HUD/HUD";
 import {Onboarding} from "../Onboarding/Onboarding";
+import {FloatingText} from "../FloatingText/FloatingText";
+
+
+let floatingTextTimer = 500;
+let timeoutID = undefined;
 export function UnityContainer() {
   const [isPause, setPause] = useState(true);
   const [score, setScore] = useState(0);
   const [isShowOnboarding, setOnboarding] = useState(true);
+  const [floatingTexts, updateFloatingTexts] = useState([]);
   const {unityProvider, sendMessage, addEventListener, removeEventListener, isLoaded} =
   useUnityContext({
     loaderUrl: "./build/ArCraftForReact.loader.js",
