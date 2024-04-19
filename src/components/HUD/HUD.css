@@ -17,3 +17,10 @@
     width: 100px;
     height: 40px;
 }
+.hud-score{
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    top: 20px;
+    left: 20px;
+}
