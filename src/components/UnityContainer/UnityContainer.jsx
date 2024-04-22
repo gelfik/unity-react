@@ -21,7 +21,8 @@ export function UnityContainer() {
   });
 
   function handleAttackButton(){
-    sendMessage("ReactEventsHandler", "Attack");
+    ReactUnity
+    sendMessage("ReactEventsHandler", "Attack", 10);
     //setPause(true);
 }
 
