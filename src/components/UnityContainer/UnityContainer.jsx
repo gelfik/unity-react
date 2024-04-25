@@ -8,7 +8,7 @@ import {FloatingText} from "../FloatingText/FloatingText";
 let floatingTextTimer = 500;
 let timeoutID = undefined;
 export function UnityContainer() {
-  const [isPause, setPause] = useState(true);
+  // const [isPause, setPause] = useState(true);
   const [score, setScore] = useState(0);
   const [isShowOnboarding, setOnboarding] = useState(true);
   const [floatingTexts, updateFloatingTexts] = useState([]);
@@ -27,7 +27,7 @@ export function UnityContainer() {
 
 function handleResumeButton(){
   sendMessage("ReactEventsHandler", "Resume");
-  setPause(false);
+  // setPause(false);
 }
 
 function handleStartButton(){
