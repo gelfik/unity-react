@@ -36,7 +36,7 @@ function handleStartButton(){
 }
 const handleScoreUpdate = useCallback((score)=>{
   setScore(score);
-});
+}, []);
 
 const handleFloatingText = useCallback((x, y, text)=>{
   clearTimeout(timeoutID);
@@ -45,7 +45,7 @@ const handleFloatingText = useCallback((x, y, text)=>{
       updateFloatingTexts([]);
   }
   updateFloatingTexts(arr=>[...arr,<FloatingText x={x} y={y} text={text}/>]);
-});
+}, []);
 
 useEffect(() => {
   addEventListener("OnScoreUpdate", handleScoreUpdate);
