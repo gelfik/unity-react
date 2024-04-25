@@ -45,7 +45,7 @@ const handleFloatingText = useCallback((x, y, text)=>{
       updateFloatingTexts([]);
   }
   updateFloatingTexts(arr=>[...arr,<FloatingText x={x} y={y} text={text}/>]);
-}, []);
+}, [floatingTexts.length]);
 
 useEffect(() => {
   addEventListener("OnScoreUpdate", handleScoreUpdate);
